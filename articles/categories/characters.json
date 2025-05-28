@@ -1,0 +1,43 @@
+{
+    "floureese":{
+        "article":"floureese",
+        "name": "Floureese",
+        "icon":"floureese",
+        "elements":["bulb", "light"]
+    },
+
+    "glactigloop":{
+        "article":"glactigloop",
+        "name": "Glactigloop",
+        "icon":"tortromtando",
+        "elements":["galaxy", "void"]
+    },
+
+    "flasquarock":{
+        "article":"flasquarock",
+        "name": "Flasquarock",
+        "icon":"flasquarock",
+        "elements":[]
+    },
+
+    "tortromtando":{
+        "article":"tortromtando",
+        "name": "Tortromtando",
+        "icon":"tortromtando",
+        "elements":["signal", "energy", "ground"]
+    },
+
+    "synapsecymbal":{
+        "article":"synapsecymbal",
+        "name": "Synapse Cymbal",
+        "icon":"tortromtando",
+        "elements":[]
+    },
+
+    "floralanenome":{
+        "article":"",
+        "name": "",
+        "icon":"",
+        "elements":[]
+    }
+}

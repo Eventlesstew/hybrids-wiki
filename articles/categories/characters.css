@@ -1,0 +1,59 @@
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100vw - 300px);
+    justify-self: center;
+    justify-content: center;
+}
+
+.prev {
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    min-height: 300px;
+    background-color: lightgray;
+    border-style:solid;
+    text-align: center;
+}
+
+table.cubeProfile h2 {
+    height: 10px;
+}
+
+.cubeContainer {
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+}
+
+.cubeText{
+    width: 100%;
+}
+
+.cubeIcon {
+    margin: -20px -20px -20px -20px;
+}
+
+.abilityIcons {
+    display: grid;
+    grid-template-columns: 24px 24px;
+    grid-template-rows: 24px 24px, 24px;
+}
+
+.specialIcon, .secondaryIcon, .quirkIcon {
+    margin: -9px -9px -9px -9px;
+}
+
+.specialIcon {
+  grid-column: 2 / 2;
+  grid-row: 0 / 3;
+}
+
+.secondaryIcon {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.quirkIcon {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Hogb';
+    src: url('/fonts/Hogb.TTF');
+}
+
+
+* {
+    font-family:"calibri";
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    /*font-family:"Big Block Balance";*/
+    text-transform: uppercase;
+}
+
+/*
+h3 {
+    font-family:"Big Block Balance";
+    text-transform: uppercase;
+}*/
+
+div.gui {
+    background-color: lightslategray;
+    top: 0;
+    position: sticky;
+    align-content: start;
+    justify-content: center;
+}
