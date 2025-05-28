@@ -8,11 +8,15 @@
 
 .prev {
     margin: 10px 10px 10px 10px;
-    width: 300px;
-    min-height: 300px;
+    width: 210px;
+    min-height: 297px;
     background-color: lightgray;
     border-style:solid;
+}
+
+.prev div {
     text-align: center;
+    justify-content: center;
 }
 
 table.cubeProfile h2 {
@@ -21,7 +25,6 @@ table.cubeProfile h2 {
 
 .cubeContainer {
  display: flex;
- align-items: center; 
  justify-content: center;
 }
 
@@ -31,6 +34,20 @@ table.cubeProfile h2 {
 
 .cubeIcon {
     margin: -20px -20px -20px -20px;
+    width: 150px;
+    height: auto;
+}
+
+/* Find a way to align the elements to the top.*/
+.monsterElementList {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+}
+.monsterElementList img {
+    margin-bottom: -30px;
+    width: 50px;
+    height: auto;
 }
 
 .abilityIcons {

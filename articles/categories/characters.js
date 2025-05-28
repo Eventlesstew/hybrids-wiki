@@ -21,7 +21,19 @@ async function createProfile(element) {
     let cubeTitle = item.getElementsByClassName("cubeTitle")[0];
     cubeTitle.textContent = details["name"];
     cubeTitle.href = "/articles/cubes/" + details["article"] + ".html";
-    item.getElementsByClassName("cubeIcon")[0].src = "/images/" + details["icon"] + ".png";
+    item.getElementsByClassName("cubeIcon")[0].src = "/images/hybrids/" + details["icon"] + ".png";
+
+    let monsterElement = item.getElementsByClassName("monsterElementList")[0];
+    for (i = 0; i < details["elements"].length; i++) {
+        let elementElement = document.createElement("img");
+        let elementAttribute = document.createAttribute("src");
+        elementAttribute.value = "/images/elements/" + details["elements"][i] + ".png";
+        elementElement.setAttributeNode(elementAttribute)
+        let elementClass = document.createAttribute("class");
+        elementClass.value = "monsterElement";
+        elementElement.setAttributeNode(elementClass)
+        monsterElement.appendChild(elementElement)
+    }
 
     element.appendChild(item);
 }

@@ -2,105 +2,91 @@
     "floureese":{
         "article":"floureese",
         "name": "Floureese",
-        "icon":"floureese",
-        "elements":["bulb", "light"]
+        "icon":"1 Floureese",
+        "elements":["A Bulb", "MSM Light"]
     },
 
     "glactigloop":{
         "article":"glactigloop",
         "name": "Glactigloop",
-        "icon":"tortromtando",
+        "icon":"2 Glactigloop",
         "elements":["galaxy", "void"]
     },
 
     "tortromtando":{
         "article":"tortromtando",
         "name": "Tortromtando",
-        "icon":"tortromtando",
+        "icon":"4 Tortromtando",
         "elements":["signal", "energy", "ground"]
     },
 
     "synapsecymbal":{
         "article":"synapsecymbal",
         "name": "Synapse Cymbal",
-        "icon":"tortromtando",
+        "icon":"5 Synapse Cymbal",
         "elements":[]
     },
 
     "floralanenome":{
         "article":"",
         "name": "Floral Anenome?",
-        "icon":"",
+        "icon":"6 Floral Anenome",
         "elements":[]
     },
 
     "boominanenome":{
         "article":"",
         "name": "Boomin' Anenome",
-        "icon":"",
+        "icon":"7 Boomin Anenome",
         "elements":[]
     },
 
     "phansmazt":{
         "article":"",
         "name": "Phansmazt",
-        "icon":"",
-        "elements":[]
-    },
-
-    "boistonitta":{
-        "article":"",
-        "name": "Boistonitta",
-        "icon":"",
+        "icon":"8 Phansmazt",
         "elements":[]
     },
 
     "trumporaka":{
         "article":"",
         "name": "Trumporaka",
-        "icon":"",
+        "icon":"10 Trumporaka",
         "elements":[]
     },
 
     "gloptistellarion":{
         "article":"",
         "name": "Gloptistellarion",
-        "icon":"",
+        "icon":"11 Gloptistellarion",
         "elements":[]
     },
 
     "marshy":{
         "article":"",
         "name": "Marshy",
-        "icon":"",
+        "icon":"10S Marshy",
         "elements":[]
     },
 
     "chomcake":{
         "article":"",
         "name": "Chomcake",
-        "icon":"",
+        "icon":"12 Chomcake",
         "elements":[]
     },
 
     "fallenflame":{
         "article":"",
         "name": "Fallen Flame",
-        "icon":"",
-        "elements":[]
-    },
-
-    "scorpispark":{
-        "article":"",
-        "name": "Scorpispark",
-        "icon":"",
+        "icon":"13 Fallen Flame",
         "elements":[]
     },
 
     "tumplflubbi":{
         "article":"",
         "name": "TumplFlubbi",
-        "icon":"",
+        "icon":"15 TumplFlubbi",
         "elements":[]
     },
 
@@ -135,7 +121,21 @@
     "flasquarock":{
         "article":"flasquarock",
         "name": "Flasquarock",
-        "icon":"flasquarock",
+        "icon":"3 Flasquarock",
+        "elements":[]
+    },
+
+     "scorpispark":{
+        "article":"",
+        "name": "Scorpispark",
+        "icon":"14 Scorpispark",
+        "elements":[]
+    },
+
+    "boistonitta":{
+        "article":"",
+        "name": "Boistonitta",
+        "icon":"9 Boistonitta",
         "elements":[]
     },
 
@@ -149,6 +149,13 @@
     "multirarityghazt":{
         "article":"",
         "name": "Multirarity Ghazt",
+        "icon":"",
+        "elements":[]
+    },
+
+    "???":{
+        "article":"",
+        "name": "???",
         "icon":"",
         "elements":[]
     }
