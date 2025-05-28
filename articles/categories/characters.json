@@ -10,84 +10,84 @@
         "article":"glactigloop",
         "name": "Glactigloop",
         "icon":"2 Glactigloop",
-        "elements":["galaxy", "void"]
+        "elements":["M Galaxy", "R Void"]
     },
 
     "tortromtando":{
         "article":"tortromtando",
         "name": "Tortromtando",
         "icon":"4 Tortromtando",
-        "elements":["signal", "energy", "ground"]
+        "elements":["A Signal", "GL Sea", "GL Ground"]
     },
 
     "synapsecymbal":{
         "article":"synapsecymbal",
         "name": "Synapse Cymbal",
         "icon":"5 Synapse Cymbal",
-        "elements":[]
+        "elements":["A Trash", "MSM Psychic", "GL Energy"]
     },
 
     "floralanenome":{
         "article":"",
         "name": "Floral Anenome?",
         "icon":"6 Floral Anenome",
-        "elements":[]
+        "elements":["T Vegetation", "T Spirit", "GL Grass"]
     },
 
     "boominanenome":{
         "article":"",
         "name": "Boomin' Anenome",
         "icon":"7 Boomin Anenome",
-        "elements":[]
+        "elements":["R Nimbus", "GL Grass"]
     },
 
     "phansmazt":{
         "article":"",
         "name": "Phansmazt",
         "icon":"8 Phansmazt",
-        "elements":[]
+        "elements":["M Spirit", "T Spirit", "MSM Plasma"]
     },
 
     "trumporaka":{
         "article":"",
         "name": "Trumporaka",
         "icon":"10 Trumporaka",
-        "elements":[]
+        "elements":["A Clay", "A Trash", "A Hostess", "R Gemstone"]
     },
 
     "gloptistellarion":{
         "article":"",
         "name": "Gloptistellarion",
         "icon":"11 Gloptistellarion",
-        "elements":[]
+        "elements":["R Void", "R Gemstone", "R Cyber", "MSM Water", "MSM Psychic"]
     },
 
     "marshy":{
         "article":"",
         "name": "Marshy",
         "icon":"10S Marshy",
-        "elements":[]
+        "elements":["GL Flame", "GL Sweets"]
     },
 
     "chomcake":{
         "article":"",
         "name": "Chomcake",
         "icon":"12 Chomcake",
-        "elements":[]
+        "elements":["MSM Anniversary Month", "GL Flame", "GL Energy"]
     },
 
     "fallenflame":{
         "article":"",
         "name": "Fallen Flame",
         "icon":"13 Fallen Flame",
-        "elements":[]
+        "elements":["MSM Fire", "GL Flame", "T Ember", "M Warmth"]
     },
 
     "tumplflubbi":{
         "article":"",
         "name": "TumplFlubbi",
         "icon":"15 TumplFlubbi",
-        "elements":[]
+        "elements":["R Nimbus", "M Storm", "T Ember", "T Nautical"]
     },
 
     "tronkdom":{
@@ -101,28 +101,28 @@
         "article":"",
         "name": "Hyception",
         "icon":"",
-        "elements":[]
+        "elements":["R Void", "R Nimbus", "M Galaxy", "GL Grass"]
     },
 
     "conglomination":{
         "article":"",
         "name": "Conglomination",
         "icon":"",
-        "elements":[]
+        "elements":["MSM Air", "MSM Fire", "M Galaxy", "M Spirit", "R Gemstone", "A Hostess", "GL Energy"]
     },
 
     "filler":{
         "article":"",
         "name": "Filler",
         "icon":"",
-        "elements":[]
+        "elements":"inconclusive"
     },
 
     "flasquarock":{
         "article":"flasquarock",
         "name": "Flasquarock",
         "icon":"3 Flasquarock",
-        "elements":[]
+        "elements":["MSM Crystal", "GL Flame", "GL Ground"]
     },
 
      "scorpispark":{
@@ -136,21 +136,21 @@
         "article":"",
         "name": "Boistonitta",
         "icon":"9 Boistonitta",
-        "elements":[]
+        "elements":["R Nimbus", "GL Sea", "S Shell", "S Slime"]
     },
 
     "anvoidjammer":{
         "article":"",
         "name": "ANVOID_JAMMER",
         "icon":"",
-        "elements":[]
+        "elements":["TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare"]
     },
 
     "multirarityghazt":{
         "article":"",
         "name": "Multirarity Ghazt",
         "icon":"",
-        "elements":[]
+        "elements":["GL Ground", "S Shell", "R Spark", "MSM Crystal"]
     },
 
     "???":{
