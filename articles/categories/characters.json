@@ -13,13 +13,6 @@
         "elements":["galaxy", "void"]
     },
 
-    "flasquarock":{
-        "article":"flasquarock",
-        "name": "Flasquarock",
-        "icon":"flasquarock",
-        "elements":[]
-    },
-
     "tortromtando":{
         "article":"tortromtando",
         "name": "Tortromtando",
@@ -36,7 +29,126 @@
 
     "floralanenome":{
         "article":"",
-        "name": "",
+        "name": "Floral Anenome?",
+        "icon":"",
+        "elements":[]
+    },
+
+    "boominanenome":{
+        "article":"",
+        "name": "Boomin' Anenome",
+        "icon":"",
+        "elements":[]
+    },
+
+    "phansmazt":{
+        "article":"",
+        "name": "Phansmazt",
+        "icon":"",
+        "elements":[]
+    },
+
+    "boistonitta":{
+        "article":"",
+        "name": "Boistonitta",
+        "icon":"",
+        "elements":[]
+    },
+
+    "trumporaka":{
+        "article":"",
+        "name": "Trumporaka",
+        "icon":"",
+        "elements":[]
+    },
+
+    "gloptistellarion":{
+        "article":"",
+        "name": "Gloptistellarion",
+        "icon":"",
+        "elements":[]
+    },
+
+    "marshy":{
+        "article":"",
+        "name": "Marshy",
+        "icon":"",
+        "elements":[]
+    },
+
+    "chomcake":{
+        "article":"",
+        "name": "Chomcake",
+        "icon":"",
+        "elements":[]
+    },
+
+    "fallenflame":{
+        "article":"",
+        "name": "Fallen Flame",
+        "icon":"",
+        "elements":[]
+    },
+
+    "scorpispark":{
+        "article":"",
+        "name": "Scorpispark",
+        "icon":"",
+        "elements":[]
+    },
+
+    "tumplflubbi":{
+        "article":"",
+        "name": "TumplFlubbi",
+        "icon":"",
+        "elements":[]
+    },
+
+    "tronkdom":{
+        "article":"",
+        "name": "Tronkdom",
+        "icon":"",
+        "elements":[]
+    },
+
+    "hyception":{
+        "article":"",
+        "name": "Hyception",
+        "icon":"",
+        "elements":[]
+    },
+
+    "conglomination":{
+        "article":"",
+        "name": "Conglomination",
+        "icon":"",
+        "elements":[]
+    },
+
+    "filler":{
+        "article":"",
+        "name": "Filler",
+        "icon":"",
+        "elements":[]
+    },
+
+    "flasquarock":{
+        "article":"flasquarock",
+        "name": "Flasquarock",
+        "icon":"flasquarock",
+        "elements":[]
+    },
+
+    "anvoidjammer":{
+        "article":"",
+        "name": "ANVOID_JAMMER",
+        "icon":"",
+        "elements":[]
+    },
+
+    "multirarityghazt":{
+        "article":"",
+        "name": "Multirarity Ghazt",
         "icon":"",
         "elements":[]
     }
