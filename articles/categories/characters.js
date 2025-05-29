@@ -1,9 +1,9 @@
-let inconclusiveElementDisplay = [];
-let elementImages = [];
+let RandelementDisplay = [];
+let elementDirArray = [];
 
 document.addEventListener('DOMContentLoaded', ()=>{ /*How to trigger code.*/
     generateProfiles()
-        .then(initiateRandElement());
+    initiateRandElement()
 })
 
 
@@ -16,43 +16,70 @@ function generateProfiles() {
 }
 
 /* CHANGE THE PROCESS TO THE FOLLOWING:
-    initiateInconclusiveElement gathers all of the element files and converts them into their own image elements.
-
-    inconclusiveElement starts by appending all of the prexisting element files back to the main,
-    then it appends a random assortment of elements into the element area.
+    Instead of RandElementDisplay, make it so all elements marked to show random elements have the class "Hidden Element" instead.
 */
+
 async function initiateRandElement() {
     let parser = new DOMParser();
 
     const response = await fetch("/images/elements");
     let file = await response.text();
+    
     let imageFiles = parser.parseFromString(file, "text/html");
     const imageSource = imageFiles.getElementsByTagName("a");
-
+    
     for (i = 0; i < imageSource.length; i++) {
-        let elementElement = document.createElement("img");
-        let elementAttribute = document.createAttribute("src");
-        elementAttribute.value = elementImages[imageSource[i].href];
-        elementElement.setAttributeNode(elementAttribute);
-        elementImages.push(elementElement);
+        let imageDir = "/images/elements/" + imageSource[i].getAttribute("href");
+        elementDirArray.push(imageDir);
     }
 
-    setInterval(initiateRandElement, 100)
+    for (p = 0; p < RandelementDisplay.length; p++) {
+        for (i = 0; i < elementDirArray.length; i++) {
+
+            let elementElement = document.createElement("img");
+            let elementAttribute = document.createAttribute("src");
+
+            elementAttribute.value = elementDirArray[i]
+
+            elementElement.setAttributeNode(elementAttribute);
+            elementElement.style.display = "none";
+
+            RandelementDisplay[p].appendChild(elementElement);
+        }        
+    }
+
+    setInterval(randElement, 100)
 }
 
 function randElement() {
-    for (p = 0; p < inconclusiveElementDisplay.length; p++) {
-        let elementDisplay = inconclusiveElementDisplay[p];
+    
+    for (p = 0; p < RandelementDisplay.length; p++) {
+        let elementDisplay = RandelementDisplay[p].getElementsByTagName("img");
 
-        let IEcount = Math.round(Math.random() * 6 + 1);
+        const randValueCount = Math.ceil(Math.random() * 7);
+        let randValues = [];
+        
+        for (i = 0; i < randValueCount; i++) {
+            const value = Math.floor(Math.random() * elementDisplay.length);
+            randValues.push(value); 
+        }
+        console.log(randValues)
 
-        for (i = 0; i < elementDisplay.getElementsByTagName("img"); i++) {
-            elementDisplay.appendChild(elementElement);
-        } 
+        for (i = 0; i < elementDisplay.length; i++) {
+            let result = false;
 
-        for (i = 0; i < IEcount; i++) {
-            elementDisplay.appendChild(elementElement);
-        }   
+            for (j = 0; j < randValues.length; j++) {
+                if (i == randValues[j]) {
+                    result = true
+                }
+            }
+
+            if (result) {
+                elementDisplay[i].style.display = "block";
+            } else {
+                elementDisplay[i].style.display = "none";
+            }
+        }
     }
 }
 
@@ -72,7 +99,7 @@ async function createProfile(element) {
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
     if (details["elements"] == "inconclusive") {
-        inconclusiveElementDisplay.push(monsterElement)
+        RandelementDisplay.push(monsterElement)
     } else {
         for (i = 0; i < details["elements"].length; i++) {
             let elementElement = document.createElement("img");
