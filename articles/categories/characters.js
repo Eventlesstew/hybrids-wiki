@@ -2,9 +2,8 @@ let inconclusiveElementDisplay = [];
 let elementImages = [];
 
 document.addEventListener('DOMContentLoaded', ()=>{ /*How to trigger code.*/
-    initiateInconclusiveElement()
     generateProfiles()
-    
+        .then(initiateRandElement());
 })
 
 
@@ -22,34 +21,36 @@ function generateProfiles() {
     inconclusiveElement starts by appending all of the prexisting element files back to the main,
     then it appends a random assortment of elements into the element area.
 */
-async function initiateInconclusiveElement() {
-    setInterval(inconclusiveElement, 100)
+async function initiateRandElement() {
+    let parser = new DOMParser();
 
     const response = await fetch("/images/elements");
     let file = await response.text();
-    let parser = new DOMParser();
-    let imagesFile = parser.parseFromString(file, "text/html");
-    const imageElement = imagesFile.getElementsByTagName("a");
+    let imageFiles = parser.parseFromString(file, "text/html");
+    const imageSource = imageFiles.getElementsByTagName("a");
 
-    for (i = 0; i < imageElement.length; i++) {
-        console.log(imageElement[i].href);
-        elementImages.push(imageElement[i].href);
+    for (i = 0; i < imageSource.length; i++) {
+        let elementElement = document.createElement("img");
+        let elementAttribute = document.createAttribute("src");
+        elementAttribute.value = elementImages[imageSource[i].href];
+        elementElement.setAttributeNode(elementAttribute);
+        elementImages.push(elementElement);
     }
+
+    setInterval(initiateRandElement, 100)
 }
 
-function inconclusiveElement() {
+function randElement() {
     for (p = 0; p < inconclusiveElementDisplay.length; p++) {
         let elementDisplay = inconclusiveElementDisplay[p];
 
         let IEcount = Math.round(Math.random() * 6 + 1);
-        elementDisplay.innerHTML = "";
 
+        for (i = 0; i < elementDisplay.getElementsByTagName("img"); i++) {
+            elementDisplay.appendChild(elementElement);
+        } 
 
         for (i = 0; i < IEcount; i++) {
-            let elementElement = document.createElement("img");
-            let elementAttribute = document.createAttribute("src");
-            elementAttribute.value = elementImages[Math.floor(Math.random()*elementImages.length)];
-            elementElement.setAttributeNode(elementAttribute);
             elementDisplay.appendChild(elementElement);
         }   
     }
@@ -71,8 +72,6 @@ async function createProfile(element) {
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
     if (details["elements"] == "inconclusive") {
-        
-        /*TODO - Have a function loop every frame when triggered to rapidly blip between Filler's elements.*/
         inconclusiveElementDisplay.push(monsterElement)
     } else {
         for (i = 0; i < details["elements"].length; i++) {
