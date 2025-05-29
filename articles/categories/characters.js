@@ -16,6 +16,12 @@ function generateProfiles() {
     }
 }
 
+/* CHANGE THE PROCESS TO THE FOLLOWING:
+    initiateInconclusiveElement gathers all of the element files and converts them into their own image elements.
+
+    inconclusiveElement starts by appending all of the prexisting element files back to the main,
+    then it appends a random assortment of elements into the element area.
+*/
 async function initiateInconclusiveElement() {
     setInterval(inconclusiveElement, 100)
 
@@ -23,10 +29,14 @@ async function initiateInconclusiveElement() {
     let file = await response.text();
     let parser = new DOMParser();
     let imagesFile = parser.parseFromString(file, "text/html");
+    const imageElement = imagesFile.getElementsByTagName("a");
 
-    elementImages = imagesFile.getElementsByTagName("a");
-    console.log(elementImages)
+    for (i = 0; i < imageElement.length; i++) {
+        console.log(imageElement[i].href);
+        elementImages.push(imageElement[i].href);
+    }
 }
+
 function inconclusiveElement() {
     for (p = 0; p < inconclusiveElementDisplay.length; p++) {
         let elementDisplay = inconclusiveElementDisplay[p];
@@ -34,14 +44,13 @@ function inconclusiveElement() {
         let IEcount = Math.round(Math.random() * 6 + 1);
         elementDisplay.innerHTML = "";
 
-        for (i = 0; i < IEcount; i++) {
-            /* let imgPointer = Math.round(Math.random() * (elementImages.length - 1));
 
+        for (i = 0; i < IEcount; i++) {
             let elementElement = document.createElement("img");
             let elementAttribute = document.createAttribute("src");
-            elementAttribute.value = elementImages[imgPointer].href;
-            elementElement.setAttributeNode(elementAttribute)
-            elementDisplay.appendChild(elementElement) */
+            elementAttribute.value = elementImages[Math.floor(Math.random()*elementImages.length)];
+            elementElement.setAttributeNode(elementAttribute);
+            elementDisplay.appendChild(elementElement);
         }   
     }
 }
