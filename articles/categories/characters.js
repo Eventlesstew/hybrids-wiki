@@ -109,7 +109,6 @@ const elementDirs = [
 
 async function initiateRandElement() {
     /* let parser = new DOMParser();
-    const dir = "/hybrids-wiki/images/elements/";
 
     const response = await fetch(dir);
     let file = await response.text();
@@ -123,6 +122,8 @@ async function initiateRandElement() {
         elementDirArray.push(imageDir);
     }*/
 
+    const dir = "/hybrids-wiki/images/elements/";
+    
     for (p = 0; p < RandelementDisplay.length; p++) {
         for (i = 0; i < elementDirArray.length; i++) {
 
