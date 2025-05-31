@@ -19,20 +19,109 @@ function generateProfiles() {
     Instead of RandElementDisplay, make it so all elements marked to show random elements have the class "Hidden Element" instead.
 */
 
-async function initiateRandElement() {
-    let parser = new DOMParser();
+const elementDirs = [
+    "A Bulb"
+    ,"A Clay"
+    ,"A Hostess"
+    ,"A Signal"
+    ,"A Trash"
+    ,"GL Energy"
+    ,"GL Flame"
+    ,"GL Gloom"
+    ,"GL Grass"
+    ,"GL Ground"
+    ,"GL Remnant"
+    ,"GL Scrap"
+    ,"GL Sea"
+    ,"GL Shiver"
+    ,"GL Sweets"
+    ,"Illusion"
+    ,"M Autumn"
+    ,"M Galaxy"
+    ,"M Spirit"
+    ,"M Storm"
+    ,"M Warmth"
+    ,"MSM Air"
+    ,"MSM Anniversary Month"
+    ,"MSM Beat Hereafter"
+    ,"MSM Bone"
+    ,"MSM Celestial"
+    ,"MSM Cloverspell"
+    ,"MSM Cold"
+    ,"MSM Control"
+    ,"MSM Crescendo Moon"
+    ,"MSM Crystal"
+    ,"MSM Dipster"
+    ,"MSM Dreamythical"
+    ,"MSM Earth"
+    ,"MSM Echoes of Eco"
+    ,"MSM Eggy"
+    ,"MSM Faerie"
+    ,"MSM Feast Ember"
+    ,"MSM Fire"
+    ,"MSM Gold"
+    ,"MSM Hoax"
+    ,"MSM Legendary"
+    ,"MSM Life Formula"
+    ,"MSM Light"
+    ,"MSM Love"
+    ,"MSM Mech"
+    ,"MSM Mindboggle"
+    ,"MSM Mythical"
+    ,"MSM Paironormal"
+    ,"MSM Perplexpore"
+    ,"MSM Plant"
+    ,"MSM Plasma"
+    ,"MSM Poison"
+    ,"MSM Primordial Plant"
+    ,"MSM Psychic"
+    ,"MSM Shadow"
+    ,"MSM SkyPainting"
+    ,"MSM Spooktacle"
+    ,"MSM Summer"
+    ,"MSM Supernatural"
+    ,"MSM Water"
+    ,"MSM Yay"
+    ,"R Cyber"
+    ,"R Easter"
+    ,"R Galacto"
+    ,"R Gemstone"
+    ,"R Mysterious"
+    ,"R Nimbus"
+    ,"R Party"
+    ,"R Shock"
+    ,"R Spark"
+    ,"R Summer"
+    ,"R Void"
+    ,"T Ember"
+    ,"T Nautical"
+    ,"T Overdrive"
+    ,"T Spirit"
+    ,"T Vegetation"
+    ,"TLL Air"
+    ,"TLL Cold"
+    ,"TLL Earth"
+    ,"TLL Fire"
+    ,"TLL Nightmare"
+    ,"TLL Plant"
+    ,"TLL Water"
+];
 
-    const response = await fetch("/hybrids-wiki/images/elements/");
+async function initiateRandElement() {
+    /* let parser = new DOMParser();
+    const dir = "/hybrids-wiki/images/elements/";
+
+    const response = await fetch(dir);
     let file = await response.text();
     
     console.log(file)
     let imageFiles = parser.parseFromString(file, "text/html");
     const imageSource = imageFiles.getElementsByTagName("a");
     
-    for (i = 0; i < imageSource.length; i++) {
-        let imageDir = "/hybrids-wiki/images/elements/" + imageSource[i].getAttribute("href");
+    for (i = 0; i < elementDirs.length; i++) {
+        let imageDir = dir + elementDirs[i].getAttribute("href");
         elementDirArray.push(imageDir);
-    }
+    }*/
 
     for (p = 0; p < RandelementDisplay.length; p++) {
         for (i = 0; i < elementDirArray.length; i++) {
@@ -40,7 +129,7 @@ async function initiateRandElement() {
             let elementElement = document.createElement("img");
             let elementAttribute = document.createAttribute("src");
 
-            elementAttribute.value = elementDirArray[i]
+            elementAttribute.value = dir + elementDirs[i] + ".png"
 
             elementElement.setAttributeNode(elementAttribute);
             elementElement.style.display = "none";
