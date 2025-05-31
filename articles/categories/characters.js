@@ -25,6 +25,7 @@ async function initiateRandElement() {
     const response = await fetch("/hybrids-wiki/images/elements");
     let file = await response.text();
     
+    console.log(file)
     let imageFiles = parser.parseFromString(file, "text/html");
     const imageSource = imageFiles.getElementsByTagName("a");
     
@@ -63,7 +64,6 @@ function randElement() {
             const value = Math.floor(Math.random() * elementDisplay.length);
             randValues.push(value); 
         }
-        console.log(randValues)
 
         for (i = 0; i < elementDisplay.length; i++) {
             let result = false;
