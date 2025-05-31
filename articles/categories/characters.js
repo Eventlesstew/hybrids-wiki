@@ -22,7 +22,7 @@ function generateProfiles() {
 async function initiateRandElement() {
     let parser = new DOMParser();
 
-    const response = await fetch("/hybrids-wiki/images/elements");
+    const response = await fetch("/hybrids-wiki/images/elements/");
     let file = await response.text();
     
     console.log(file)
