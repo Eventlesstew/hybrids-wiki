@@ -1,6 +1,3 @@
-let RandelementDisplay = [];
-let elementDirArray = [];
-
 document.addEventListener('DOMContentLoaded', ()=>{ /*How to trigger code.*/
     generateProfiles()
     initiateRandElement()
@@ -30,7 +27,7 @@ async function initiateRandElement() {
     const imageSource = imageFiles.getElementsByTagName("a");
     
     for (i = 0; i < elementDirs.length; i++) {
-        let imageDir = dir + elementDirs[i].getAttribute("href");
+        let imageDir = dir + elementDirs[i] + ".png";
         elementDirArray.push(imageDir);
     }*/
 
@@ -121,7 +118,10 @@ async function initiateRandElement() {
         ,"TLL Plant"
         ,"TLL Water"
     ];
-    console.log(RandelementDisplay)
+
+
+    const RandelementDisplay = document.getElementsByClassName("monsterElementRand");
+    console.log(RandelementDisplay);
     const dir = "/hybrids-wiki/images/elements/";
 
     for (p = 0; p < RandelementDisplay.length; p++) {
@@ -143,7 +143,8 @@ async function initiateRandElement() {
 }
 
 function randElement() {
-    
+    const RandelementDisplay = document.getElementsByClassName("monsterElementRand");
+
     for (p = 0; p < RandelementDisplay.length; p++) {
         let elementDisplay = RandelementDisplay[p].getElementsByTagName("img");
 
@@ -189,7 +190,7 @@ async function createProfile(element) {
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
     if (details["elements"] == "inconclusive") {
-        RandelementDisplay.push(monsterElement)
+        monsterElement.class = "monsterElementRand";
     } else {
         for (i = 0; i < details["elements"].length; i++) {
             let elementElement = document.createElement("img");
