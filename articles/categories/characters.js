@@ -121,7 +121,7 @@ async function initiateRandElement() {
         ,"TLL Plant"
         ,"TLL Water"
     ];
-    console.log(elementDirs)
+    console.log(RandelementDisplay)
     const dir = "/hybrids-wiki/images/elements/";
 
     for (p = 0; p < RandelementDisplay.length; p++) {
