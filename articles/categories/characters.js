@@ -22,14 +22,14 @@ function generateProfiles() {
 async function initiateRandElement() {
     let parser = new DOMParser();
 
-    const response = await fetch("/images/elements");
+    const response = await fetch("/hybrids-wiki/images/elements");
     let file = await response.text();
     
     let imageFiles = parser.parseFromString(file, "text/html");
     const imageSource = imageFiles.getElementsByTagName("a");
     
     for (i = 0; i < imageSource.length; i++) {
-        let imageDir = "/images/elements/" + imageSource[i].getAttribute("href");
+        let imageDir = "/hybrids-wiki/images/elements/" + imageSource[i].getAttribute("href");
         elementDirArray.push(imageDir);
     }
 
@@ -87,14 +87,14 @@ async function createProfile(element) {
     const template = document.getElementsByTagName("template")[0].content.querySelector("div");
     const item = document.importNode(template, true);
 
-    const response = await fetch("/articles/categories/characters.json");
+    const response = await fetch("/hybrids-wiki/articles/categories/characters.json");
     const file = await response.json();
     const details = file[element.id]
 
     let cubeTitle = item.getElementsByClassName("cubeTitle")[0];
     cubeTitle.textContent = details["name"];
-    cubeTitle.href = "/articles/cubes/" + details["article"] + ".html";
-    item.getElementsByClassName("cubeIcon")[0].src = "/images/hybrids/" + details["icon"] + ".png";
+    cubeTitle.href = "/hybrids-wiki/articles/cubes/" + details["article"] + ".html";
+    item.getElementsByClassName("cubeIcon")[0].src = "/hybrids-wiki/images/hybrids/" + details["icon"] + ".png";
 
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
@@ -104,7 +104,7 @@ async function createProfile(element) {
         for (i = 0; i < details["elements"].length; i++) {
             let elementElement = document.createElement("img");
             let elementAttribute = document.createAttribute("src");
-            elementAttribute.value = "/images/elements/" + details["elements"][i] + ".png";
+            elementAttribute.value = "/hybrids-wiki/images/elements/" + details["elements"][i] + ".png";
             elementElement.setAttributeNode(elementAttribute)
             monsterElement.appendChild(elementElement)
         }

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{ /*How to trigger code.*/
 })
 
 async function addHeader() {
-    const response = await fetch("/components/header.html");
+    const response = await fetch("/hybrids-wiki/components/header.html");
     let file = await response.text();
 
     let parser = new DOMParser();
