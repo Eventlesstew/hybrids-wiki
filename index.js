@@ -14,8 +14,6 @@ async function addHeader() {
 
     let item = header.body.getElementsByTagName("div");
     for (i = item.length - 1; i > -1; i--) {
-        console.log(i);
-        console.log(item[i]);
         document.body.prepend(item[i]);
     }
 }
