@@ -190,7 +190,9 @@ async function createProfile(element) {
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
     if (details["elements"] == "inconclusive") {
-        monsterElement.class = "monsterElementRand";
+        let elementAttribute = document.createAttribute("class");
+        elementAttribute.value = "monsterElementRand";
+        monsterElement.setAttributeNode(elementAttribute);
     } else {
         for (i = 0; i < details["elements"].length; i++) {
             let elementElement = document.createElement("img");
