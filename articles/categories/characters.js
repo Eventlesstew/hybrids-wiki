@@ -123,9 +123,9 @@ async function initiateRandElement() {
     }*/
 
     const dir = "/hybrids-wiki/images/elements/";
-    
+
     for (p = 0; p < RandelementDisplay.length; p++) {
-        for (i = 0; i < elementDirArray.length; i++) {
+        for (i = 0; i < elementDirs.length; i++) {
 
             let elementElement = document.createElement("img");
             let elementAttribute = document.createAttribute("src");
