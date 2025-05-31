@@ -8,8 +8,8 @@
 
 .prev {
     margin: 10px 10px 10px 10px;
-    width: 210px;
-    min-height: 297px;
+    width: 315px;
+    min-height: 415.5px;
     background-color: lightgray;
     border-style:solid;
 }
@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-table.cubeProfile h2 {
+.cubeProfile h2 {
     height: 10px;
 }
 
@@ -33,8 +33,9 @@ table.cubeProfile h2 {
 }
 
 .cubeIcon {
-    margin: -20px -20px -20px -20px;
-    width: 150px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 200px;
     height: auto;
 }
 
@@ -42,7 +43,7 @@ table.cubeProfile h2 {
 .monsterElementList {
     display: flex;
     flex-direction: column;
-    align-content: baseline;
+    justify-content: space-evenly;
 }
 .monsterElementList img {
     margin-bottom: -10px;
