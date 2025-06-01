@@ -40,12 +40,12 @@
 }
 
 /* Find a way to align the elements to the top.*/
-.monsterElementList {
+.monsterElementList, .monsterElementRand {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.monsterElementList img {
+.monsterElementList img, .monsterElementRand img {
     margin-bottom: -10px;
     width: 50px;
     height: auto;
