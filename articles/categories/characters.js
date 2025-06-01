@@ -9,7 +9,7 @@ function generateProfiles() {
     for (i = 0; i < cubePages.length; i++) {
         createProfile(cubePages[i])
     }
-    
+
     initiateRandElement()
 }
 
@@ -129,8 +129,8 @@ async function initiateRandElement() {
             let elementElement = document.createElement("img");
             let elementAttribute = document.createAttribute("src");
 
-            elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png"
-            console.log(elementAttribute.value);
+            elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png";
+            console.log("/hybrids-wiki/images/elements/" + elementDirs[i] + ".png");
 
             elementElement.setAttributeNode(elementAttribute);
             elementElement.style.display = "none";
