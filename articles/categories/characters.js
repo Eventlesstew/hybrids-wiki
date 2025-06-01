@@ -122,7 +122,7 @@ async function initiateRandElement(randElementDisplay) {
 
     let newClass = document.createAttribute("class");
     newClass.value = "monsterElementRand";
-    RandelementDisplay.setAttributeNode(newClass);
+    randElementDisplay.setAttributeNode(newClass);
     
     for (i = 0; i < elementDirs.length; i++) {
         let elementElement = document.createElement("img");
@@ -134,7 +134,7 @@ async function initiateRandElement(randElementDisplay) {
         elementElement.setAttributeNode(elementAttribute);
         elementElement.style.display = "none";
 
-        RandelementDisplay.appendChild(elementElement);
+        randElementDisplay.appendChild(elementElement);
     }        
 }
 
