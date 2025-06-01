@@ -10,14 +10,14 @@ function generateProfiles() {
         createProfile(cubePages[i])
     }
 
-    initiateRandElement()
+    setInterval(randElement, 100)
 }
 
 /* CHANGE THE PROCESS TO THE FOLLOWING:
     Instead of RandElementDisplay, make it so all elements marked to show random elements have the class "Hidden Element" instead.
 */
 
-async function initiateRandElement() {
+async function initiateRandElement(randElementDisplay) {
     /* let parser = new DOMParser();
 
     const response = await fetch(dir);
@@ -120,26 +120,22 @@ async function initiateRandElement() {
         "TLL Water",
     ];
 
+    let newClass = document.createAttribute("class");
+    newClass.value = "monsterElementRand";
+    RandelementDisplay.setAttributeNode(newClass);
+    
+    for (i = 0; i < elementDirs.length; i++) {
+        let elementElement = document.createElement("img");
+        let elementAttribute = document.createAttribute("src");
 
-    const RandelementDisplay = document.getElementsByClassName("monsterElementRand");
+        elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png";
+        console.log("/hybrids-wiki/images/elements/" + elementDirs[i] + ".png");
 
-    for (p = 0; p < RandelementDisplay.length; p++) {
-        for (i = 0; i < elementDirs.length; i++) {
+        elementElement.setAttributeNode(elementAttribute);
+        elementElement.style.display = "none";
 
-            let elementElement = document.createElement("img");
-            let elementAttribute = document.createAttribute("src");
-
-            elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png";
-            console.log("/hybrids-wiki/images/elements/" + elementDirs[i] + ".png");
-
-            elementElement.setAttributeNode(elementAttribute);
-            elementElement.style.display = "none";
-
-            RandelementDisplay[p].appendChild(elementElement);
-        }        
-    }
-
-    setInterval(randElement, 100)
+        RandelementDisplay.appendChild(elementElement);
+    }        
 }
 
 function randElement() {
@@ -190,9 +186,7 @@ async function createProfile(element) {
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
 
     if (details["elements"] == "inconclusive") {
-        let elementAttribute = document.createAttribute("class");
-        elementAttribute.value = "monsterElementRand";
-        monsterElement.setAttributeNode(elementAttribute);
+        initiateRandElement(monsterElement)
     } else {
         for (i = 0; i < details["elements"].length; i++) {
             let elementElement = document.createElement("img");
