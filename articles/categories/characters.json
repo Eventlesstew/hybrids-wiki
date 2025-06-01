@@ -28,14 +28,14 @@
     },
 
     "floralanenome":{
-        "article":"",
+        "article":"floralanenome",
         "name": "Floral Anenome?",
         "icon":"6 Floral Anenome",
         "elements":["T Vegetation", "T Spirit", "GL Grass"]
     },
 
     "boominanenome":{
-        "article":"",
+        "article":"boominanenome",
         "name": "Boomin' Anenome",
         "icon":"7 Boomin Anenome",
         "elements":["R Nimbus", "GL Grass"]
