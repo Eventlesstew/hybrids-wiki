@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{ /*How to trigger code.*/
     generateProfiles()
-    initiateRandElement()
 })
 
 
@@ -10,6 +9,8 @@ function generateProfiles() {
     for (i = 0; i < cubePages.length; i++) {
         createProfile(cubePages[i])
     }
+    
+    initiateRandElement()
 }
 
 /* CHANGE THE PROCESS TO THE FOLLOWING:
@@ -121,7 +122,6 @@ async function initiateRandElement() {
 
 
     const RandelementDisplay = document.getElementsByClassName("monsterElementRand");
-    console.log(RandelementDisplay);
 
     for (p = 0; p < RandelementDisplay.length; p++) {
         for (i = 0; i < elementDirs.length; i++) {
@@ -130,6 +130,7 @@ async function initiateRandElement() {
             let elementAttribute = document.createAttribute("src");
 
             elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png"
+            console.log(elementAttribute.value);
 
             elementElement.setAttributeNode(elementAttribute);
             elementElement.style.display = "none";
