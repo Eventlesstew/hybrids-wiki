@@ -180,7 +180,7 @@ async function createProfile(element) {
 
     let cubeTitle = item.getElementsByClassName("cubeTitle")[0];
     cubeTitle.textContent = details["name"];
-    cubeTitle.href = "/hybrids-wiki/articles/cubes/" + details["article"] + ".html";
+    cubeTitle.href = "/hybrids-wiki/articles/monsters/" + details["article"] + ".html";
     item.getElementsByClassName("cubeIcon")[0].src = "/hybrids-wiki/images/hybrids/" + details["icon"] + ".png";
 
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];
