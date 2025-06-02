@@ -133,10 +133,10 @@
     },
 
      "scorpispark":{
-        "article":"",
+        "article":"scorpispark",
         "name": "Scorpispark",
         "icon":"14 Scorpispark",
-        "elements":[]
+        "elements":["GL Ground"]
     },
 
     "boistonitta":{
