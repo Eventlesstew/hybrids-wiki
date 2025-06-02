@@ -10,7 +10,14 @@
         "article":"glactigloop",
         "name": "Glactigloop",
         "icon":"2 Glactigloop",
-        "elements":["M Galaxy", "R Void"]
+        "elements":["M Galaxy", "RV Void"]
+    },
+
+    "arpeggileaf":{
+        "article":"arpeggileaf",
+        "name": "Arpeggileaf",
+        "icon":"3 Arpeggileaf",
+        "elements":["GL Ground", "GL Grass", "A Clay"]
     },
 
     "tortromtando":{
@@ -38,28 +45,28 @@
         "article":"boominanenome",
         "name": "Boomin' Anenome",
         "icon":"7 Boomin Anenome",
-        "elements":["R Nimbus", "GL Grass"]
+        "elements":["RV Nimbus", "GL Grass"]
     },
 
     "phansmazt":{
-        "article":"",
+        "article":"phansmazt",
         "name": "Phansmazt",
         "icon":"8 Phansmazt",
         "elements":["M Spirit", "T Spirit", "MSM Plasma"]
     },
 
     "trumporaka":{
-        "article":"",
+        "article":"trumporaka",
         "name": "Trumporaka",
         "icon":"10 Trumporaka",
-        "elements":["A Clay", "A Trash", "A Hostess", "R Gemstone"]
+        "elements":["A Clay", "A Trash", "A Hostess", "RV Gemstone"]
     },
 
     "gloptistellarion":{
         "article":"",
         "name": "Gloptistellarion",
         "icon":"11 Gloptistellarion",
-        "elements":["R Void", "R Gemstone", "R Cyber", "MSM Water", "MSM Psychic"]
+        "elements":["RV Void", "RV Gemstone", "RV Cyber", "MSM Water", "MSM Psychic"]
     },
 
     "marshy":{
@@ -87,14 +94,14 @@
         "article":"",
         "name": "TumplFlubbi",
         "icon":"15 TumplFlubbi",
-        "elements":["R Nimbus", "M Storm", "T Ember", "T Nautical"]
+        "elements":["RV Nimbus", "M Storm", "T Ember", "T Nautical"]
     },
 
     "tronkdom":{
         "article":"",
         "name": "Tronkdom",
         "icon":"",
-        "elements":[]
+        "elements":["A Bulb", "A Trash", "A Hostess", "M Autumn"]
     },
 
     "hyception":{
@@ -108,7 +115,7 @@
         "article":"",
         "name": "Conglomination",
         "icon":"",
-        "elements":["MSM Air", "MSM Fire", "M Galaxy", "M Spirit", "R Gemstone", "A Hostess", "GL Energy"]
+        "elements":["MSM Air", "MSM Fire", "M Galaxy", "M Spirit", "RV Gemstone", "A Hostess", "GL Energy"]
     },
 
     "filler":{
@@ -136,7 +143,7 @@
         "article":"",
         "name": "Boistonitta",
         "icon":"9 Boistonitta",
-        "elements":["R Nimbus", "GL Sea", "S Shell", "S Slime"]
+        "elements":["RV Nimbus", "GL Sea", "S Shell", "S Slime"]
     },
 
     "anvoidjammer":{
@@ -150,7 +157,7 @@
         "article":"",
         "name": "Multirarity Ghazt",
         "icon":"",
-        "elements":["GL Ground", "S Shell", "R Spark", "MSM Crystal"]
+        "elements":["GL Ground", "S Shell", "RV Spark", "MSM Crystal"]
     },
 
     "???":{
