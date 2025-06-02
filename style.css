@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'Hogb';
-    src: url('/hybrids-wiki/fonts/Hogb.ttf');
+    src: url('/hybrids-wiki/fonts/Hogb.TTF');
 }
-
 
 * {
     font-family:"Hogb";
