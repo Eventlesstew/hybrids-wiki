@@ -181,9 +181,13 @@ async function createProfile(element) {
 
     if (details["dominant-class"] == "MSM") {
         cubeTitle.style = "font-family:HogB;";
-    } else if (details["dominant-class"] == "Grasslanders") {
+    }
+    
+    if (details["dominant-class"] == "Grasslanders") {
         cubeTitle.style = "font-family:'Comic Sans';";
-    } else if (details["dominant-class"] == "Ameliorates") {
+    }
+    
+    if (details["dominant-class"] == "Ameliorates") {
         cubeTitle.style = "font-family:Helevetica;";
     }
 
