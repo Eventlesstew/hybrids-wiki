@@ -180,9 +180,11 @@ async function createProfile(element) {
     cubeTitle.href = "/hybrids-wiki/articles/monsters/" + details["article"] + ".html";
 
     if (details["dominant-class"] == "MSM") {
-        cubeTitle.style.fontfamily = "HogB";
+        cubeTitle.style = "font-family:HogB;";
     } else if (details["dominant-class"] == "Grasslanders") {
-        cubeTitle.style.fontfamily = "Comic Sans";
+        cubeTitle.style.fontfamily = "font-family:'Comic Sans';";
+    } else if (details["dominant-class"] == "Ameliorates") {
+        cubeTitle.style.fontfamily = "font-family:'Helevetica';";
     }
 
     item.getElementsByClassName("cubeIcon")[0].src = "/hybrids-wiki/images/hybrids/" + details["icon"] + ".png";
