@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Hogb';
+    font-family: 'HogB';
     src: url('/hybrids-wiki/fonts/Hogb.TTF');
 }
 
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family:"Hogb";
+    font-family:"calibri";
 }
 
 h1 {

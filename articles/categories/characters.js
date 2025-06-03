@@ -178,6 +178,13 @@ async function createProfile(element) {
     let cubeTitle = item.getElementsByClassName("cubeTitle")[0];
     cubeTitle.textContent = details["name"];
     cubeTitle.href = "/hybrids-wiki/articles/monsters/" + details["article"] + ".html";
+
+    if (details["dominant-class"] == "MSM") {
+        cubeTitle.style.fontfamily = "HogB";
+    } else if (details["dominant-class"] == "Grasslanders") {
+        cubeTitle.style.fontfamily = "Comic Sans";
+    }
+
     item.getElementsByClassName("cubeIcon")[0].src = "/hybrids-wiki/images/hybrids/" + details["icon"] + ".png";
 
     let monsterElement = item.getElementsByClassName("monsterElementList")[0];

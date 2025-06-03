@@ -3,167 +3,191 @@
         "article":"floureese",
         "name": "Floureese",
         "icon":"1 Floureese",
-        "elements":["A Bulb", "MSM Light"]
+        "elements":["A Bulb", "MSM Light"],
+        "dominant-class": "Ameliorates"
     },
 
     "glactigloop":{
         "article":"glactigloop",
         "name": "Glactigloop",
         "icon":"2 Glactigloop",
-        "elements":["M Galaxy", "RV Void"]
+        "elements":["M Galaxy", "RV Void"],
+        "dominant-class": "Mysticals"
     },
 
     "arpeggileaf":{
         "article":"arpeggileaf",
         "name": "Arpeggileaf",
         "icon":"3 Arpeggileaf",
-        "elements":["GL Ground", "GL Grass", "A Clay"]
+        "elements":["GL Ground", "GL Grass", "A Clay"],
+        "dominant-class": "Grasslanders"
     },
 
     "tortromtando":{
         "article":"tortromtando",
         "name": "Tortromtando",
         "icon":"4 Tortromtando",
-        "elements":["A Signal", "GL Sea", "GL Ground"]
+        "elements":["A Signal", "GL Sea", "GL Ground"],
+        "dominant-class": "Grasslanders"
     },
 
     "synapsecymbal":{
         "article":"synapsecymbal",
         "name": "Synapse Cymbal",
         "icon":"5 Synapse Cymbal",
-        "elements":["A Trash", "MSM Psychic", "GL Energy"]
+        "elements":["A Trash", "MSM Psychic", "GL Energy"],
+        "dominant-class": "Ameliorates"
     },
 
     "floralanenome":{
         "article":"floralanenome",
         "name": "Floral Anenome?",
         "icon":"6 Floral Anenome",
-        "elements":["T Vegetation", "T Spirit", "GL Grass"]
+        "elements":["T Vegetation", "T Spirit", "GL Grass"],
+        "dominant-class": "Terranians"
     },
 
     "boominanenome":{
         "article":"boominanenome",
         "name": "Boomin' Anenome",
         "icon":"7 Boomin Anenome",
-        "elements":["RV Nimbus", "GL Grass"]
+        "elements":["RV Nimbus", "GL Grass"],
+        "dominant-class": "Grasslanders"
     },
 
     "phansmazt":{
         "article":"phansmazt",
         "name": "Phansmazt",
         "icon":"8 Phansmazt",
-        "elements":["M Spirit", "T Spirit", "MSM Plasma"]
+        "elements":["M Spirit", "T Spirit", "MSM Plasma"],
+        "dominant-class": "Mysticals"
     },
 
     "trumporaka":{
         "article":"trumporaka",
         "name": "Trumporaka",
         "icon":"10 Trumporaka",
-        "elements":["A Clay", "A Trash", "A Hostess", "RV Gemstone"]
+        "elements":["A Clay", "A Trash", "A Hostess", "RV Gemstone"],
+        "dominant-class": "Ameliorates"
     },
 
     "gloptistellarion":{
         "article":"",
         "name": "Gloptistellarion",
         "icon":"11 Gloptistellarion",
-        "elements":["RV Void", "RV Gemstone", "RV Cyber", "MSM Water", "MSM Psychic"]
+        "elements":["RV Void", "RV Gemstone", "RV Cyber", "MSM Water", "MSM Psychic"],
+        "dominant-class": "Runiks"
     },
 
     "marshy":{
         "article":"",
         "name": "Marshy",
         "icon":"10S Marshy",
-        "elements":["GL Flame", "GL Sweets"]
+        "elements":["GL Flame", "GL Sweets"],
+        "dominant-class": "Grasslanders"
     },
 
     "chomcake":{
         "article":"",
         "name": "Chomcake",
         "icon":"12 Chomcake",
-        "elements":["MSM Anniversary Month", "GL Flame", "GL Energy"]
+        "elements":["MSM Anniversary Month", "GL Flame", "GL Energy"],
+        "dominant-class": "Grasslanders"
     },
 
     "fallenflame":{
         "article":"",
         "name": "Fallen Flame",
         "icon":"13 Fallen Flame",
-        "elements":["MSM Fire", "GL Flame", "T Ember", "M Warmth"]
+        "elements":["MSM Fire", "GL Flame", "T Ember", "M Warmth"],
+        "dominant-class": "MSM"
     },
 
     "tumplflubbi":{
         "article":"",
         "name": "TumplFlubbi",
         "icon":"15 TumplFlubbi",
-        "elements":["RV Nimbus", "M Storm", "T Ember", "T Nautical"]
+        "elements":["RV Nimbus", "M Storm", "T Ember", "T Nautical"],
+        "dominant-class": "Terranians"
     },
 
     "tronkdom":{
         "article":"",
         "name": "Tronkdom",
         "icon":"",
-        "elements":["A Bulb", "A Trash", "A Hostess", "M Autumn"]
+        "elements":["A Bulb", "A Trash", "A Hostess", "M Autumn"],
+        "dominant-class": "Ameliorates"
     },
 
     "hyception":{
         "article":"",
         "name": "Hyception",
         "icon":"",
-        "elements":["RV Void", "RV Nimbus", "M Galaxy", "GL Grass"]
+        "elements":["RV Void", "RV Nimbus", "M Galaxy", "GL Grass"],
+        "dominant-class": "Grasslanders"
     },
 
     "conglomination":{
         "article":"",
         "name": "Conglomination",
         "icon":"",
-        "elements":["MSM Air", "MSM Fire", "M Galaxy", "M Spirit", "RV Gemstone", "A Hostess", "GL Energy"]
+        "elements":["MSM Air", "MSM Fire", "M Galaxy", "M Spirit", "RV Gemstone", "A Hostess", "GL Energy"],
+        "dominant-class": "MSM"
     },
 
     "filler":{
         "article":"",
         "name": "Filler",
         "icon":"21 Filler",
-        "elements":"inconclusive"
+        "elements":"inconclusive",
+        "dominant-class": "MSM"
     },
 
     "flasquarock":{
         "article":"flasquarock",
         "name": "Flasquarock",
         "icon":"3 Flasquarock",
-        "elements":["MSM Crystal", "GL Flame", "GL Ground"]
+        "elements":["MSM Crystal", "GL Flame", "GL Ground"],
+        "dominant-class": "MSM"
     },
 
      "scorpispark":{
         "article":"scorpispark",
         "name": "Scorpispark",
         "icon":"14 Scorpispark",
-        "elements":["GL Ground"]
+        "elements":["GL Ground"],
+        "dominant-class": "Grasslanders"
     },
 
     "boistonitta":{
         "article":"",
         "name": "Boistonitta",
         "icon":"9 Boistonitta",
-        "elements":["RV Nimbus", "GL Sea", "S Shell", "S Slime"]
+        "elements":["RV Nimbus", "GL Sea", "S Shell", "S Slime"],
+        "dominant-class": "Grasslanders"
     },
 
     "anvoidjammer":{
         "article":"",
         "name": "ANVOID_JAMMER",
         "icon":"",
-        "elements":["TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare"]
+        "elements":["TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare", "TLL Nightmare"],
+        "dominant-class": "MSM"
     },
 
     "multirarityghazt":{
         "article":"",
         "name": "Multirarity Ghazt",
         "icon":"",
-        "elements":["GL Ground", "S Shell", "RV Spark", "MSM Crystal"]
+        "elements":["GL Ground", "S Shell", "RV Spark", "MSM Crystal"],
+        "dominant-class": "MSM"
     },
 
     "???":{
         "article":"",
         "name": "???",
         "icon":"",
-        "elements":[]
+        "elements":[],
+        "dominant-class": "MSM"
     }
 }
