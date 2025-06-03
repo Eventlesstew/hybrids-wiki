@@ -111,13 +111,11 @@ async function initiateRandElement(randElementDisplay) {
         "T Overdrive",
         "T Spirit",
         "T Vegetation",
-        "TLL Air",
-        "TLL Cold",
-        "TLL Earth",
-        "TLL Fire",
-        "TLL Nightmare",
-        "TLL Plant",
-        "TLL Water",
+        "T Nonsense",
+        "T Rot",
+        "T Rebirth",
+        "T Permafrost",
+        "T Explosive"
     ];
 
     let newClass = document.createAttribute("class");
@@ -129,7 +127,6 @@ async function initiateRandElement(randElementDisplay) {
         let elementAttribute = document.createAttribute("src");
 
         elementAttribute.value = "/hybrids-wiki/images/elements/" + elementDirs[i] + ".png";
-        console.log("/hybrids-wiki/images/elements/" + elementDirs[i] + ".png");
 
         elementElement.setAttributeNode(elementAttribute);
         elementElement.style.display = "none";

@@ -3,6 +3,11 @@
     src: url('/hybrids-wiki/fonts/Hogb.TTF');
 }
 
+@font-face {
+    font-family: 'Comic Sans';
+    src: url('/hybrids-wiki/fonts/Comic Sans.ttf');
+}
+
 * {
     font-family:"Hogb";
 }

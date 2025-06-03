@@ -1,15 +1,16 @@
 .category {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100vw - 300px);
+    width: 100vw;
+    max-width: 100vh;
     justify-self: center;
     justify-content: center;
 }
 
 .prev {
     margin: 10px 10px 10px 10px;
-    width: 315px;
-    min-height: 415.5px;
+    width: 210px;
+    min-height: 297px;
     background-color: lightgray;
     border-style:solid;
 }
@@ -35,7 +36,7 @@
 .cubeIcon {
     margin-top: -20px;
     margin-bottom: -20px;
-    width: 200px;
+    width: 130px;
     height: auto;
 }
 
@@ -47,7 +48,7 @@
 }
 .monsterElementList img, .monsterElementRand img {
     margin-bottom: -10px;
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
