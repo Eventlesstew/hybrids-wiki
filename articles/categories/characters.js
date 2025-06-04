@@ -184,11 +184,15 @@ async function createProfile(element) {
     }
     
     if (details["dominant-class"] == "Grasslanders") {
-        cubeTitle.style = "font-family:'Comic Sans';";
+        cubeTitle.style = "font-family:ComicSans;";
     }
     
     if (details["dominant-class"] == "Ameliorates") {
-        cubeTitle.style = "font-family:Helevetica;";
+        cubeTitle.style = "font-family:Arial;";
+    }
+
+    if (details["dominant-class"] == "Terranians") {
+        cubeTitle.style = "font-family:FredokaOne;";
     }
 
     item.getElementsByClassName("cubeIcon")[0].src = "/hybrids-wiki/images/hybrids/" + details["icon"] + ".png";
