@@ -1,15 +1,25 @@
 @font-face {
+    font-family: 'Calibri';
+    src: url('/hybrids-wiki/fonts/calibri-regular.ttf');
+}
+
+@font-face {
     font-family: 'HogB';
     src: url('/hybrids-wiki/fonts/Hogb.TTF');
 }
 
 @font-face {
-    font-family: 'Comic Sans';
+    font-family: 'ComicSans';
     src: url('/hybrids-wiki/fonts/Comic Sans.ttf');
 }
 
+@font-face {
+    font-family: 'FredokaOne';
+    src: url('/hybrids-wiki/fonts/FredokaOne-Regular.ttf');
+}
+
 * {
-    font-family: "calibri";
+    font-family: "Calibri";
 }
 
 h1 {
