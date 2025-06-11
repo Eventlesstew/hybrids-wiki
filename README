@@ -1,2 +1,4 @@
-USE THIS TO TEST THINGS:
+==Welcome the the Hybrids Wiki==
+
+If you want to test any changes you wish to make, execute this command in the file the Hybrids Wiki is in.
 python3 -m http.server 8000
