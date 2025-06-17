@@ -106,16 +106,6 @@ async function initiateRandElement(randElementDisplay) {
         "RV Spark",
         "RV Summer",
         "RV Void",
-        "T Ember",
-        "T Nautical",
-        "T Overdrive",
-        "T Spirit",
-        "T Vegetation",
-        "T Nonsense",
-        "T Rot",
-        "T Rebirth",
-        "T Permafrost",
-        "T Explosive"
     ];
 
     let newClass = document.createAttribute("class");
@@ -188,7 +178,7 @@ async function createProfile(element) {
     }
     
     if (details["dominant-class"] == "Ameliorates") {
-        cubeTitle.style = "font-family:Arial;";
+        cubeTitle.style = "font-family:Helvetica;";
     }
 
     if (details["dominant-class"] == "Terranians") {
